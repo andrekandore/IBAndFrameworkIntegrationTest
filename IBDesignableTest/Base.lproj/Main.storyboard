@@ -14,20 +14,20 @@
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="IBDesignableTest" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" customClass="ContentView" customModule="IBDesignableTest" customModuleProvider="target">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2uF-IM-TZs" customClass="NextView" customModule="IBDesignableTest" customModuleProvider="target">
-                                <rect key="frame" x="103" y="300" width="81" height="89"/>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZLI-KM-bjx" customClass="IBDesignableView" customModule="MyUIKit">
+                                <rect key="frame" x="220" y="300" width="63" height="72"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="string" keyPath="stylename" value="TryIt"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZLI-KM-bjx" customClass="NextView" customModule="IBDesignableTest" customModuleProvider="target">
-                                <rect key="frame" x="220" y="300" width="81" height="89"/>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2uF-IM-TZs" customClass="IBDesignableView" customModule="MyUIKit">
+                                <rect key="frame" x="120" y="276" width="79" height="75"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <userDefinedRuntimeAttributes>
@@ -41,13 +41,10 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <view contentMode="scaleToFill" id="P3n-Uv-nDd" customClass="NextView" customModule="IBDesignableTest" customModuleProvider="target">
-                    <rect key="frame" x="0.0" y="0.0" width="45" height="51"/>
+                    <rect key="frame" x="0.0" y="0.0" width="54" height="61"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <viewLayoutGuide key="safeArea" id="RSl-Tv-4eS"/>
-                    <userDefinedRuntimeAttributes>
-                        <userDefinedRuntimeAttribute type="string" keyPath="stylename" value="TryIt"/>
-                    </userDefinedRuntimeAttributes>
                 </view>
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="132.68365817091455"/>

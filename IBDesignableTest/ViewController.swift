@@ -11,58 +11,48 @@ import MyUIKit
 
 @IBDesignable
 class ViewController: UIViewController {
-    override func prepareForInterfaceBuilder() {
-        super.prepareForInterfaceBuilder()
-        overwrite()
+//    override func prepareForInterfaceBuilder() {
+//        super.prepareForInterfaceBuilder()
+//        overwrite()
+//        self.view.setNeedsDisplay()
+//        self.view.setNeedsLayout()
+//
+//    }
+//
+//    required init?(coder aDecoder: NSCoder) {
+//        super.init(coder: aDecoder)
+//        overwrite()
+//    }
+//
+//    override func viewDidAppear(_ animated: Bool) {
+//        super.viewDidAppear(animated)
+//        self.view.backgroundColor = UIColor.red
+//        overwrite()
+//        self.view.setNeedsDisplay()
+//        self.view.setNeedsLayout()
+//
+//    }
+//
+//    override func awakeFromNib() {
+//        super.awakeFromNib()
+//        overwrite()
+//        self.view.setNeedsDisplay()
+//        self.view.setNeedsLayout()
+//
+//    }
 
-    }
-
-    required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-        overwrite()
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        self.view.backgroundColor = UIColor.red
-        overwrite()
-
-    }
-    
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        overwrite()
-    }
 }
 
+@IBDesignable
 class NextView: IBDesignableView {
     override func prepareForInterfaceBuilder() {
         super.prepareForInterfaceBuilder()
         overwrite()
-//        self.backgroundColor = UIColor.blue
+//        NotificationCenter.default.post(name: Notification.Name("Update"), object: nil)
+
     }
 }
 
-
-class ContentView: IBDesignableView {
-//    override func prepareForInterfaceBuilder() {
-//        super.prepareForInterfaceBuilder()
-//                overwrite()
-//        //        self.backgroundColor = UIColor.blue
-//    }
-}
-
-
-//let r: Bool = done
-
-//let done: Bool = {
-//
-//    NotificationCenter.default.addObserver(forName: Notification.Name(rawValue: "DidSet"), object: nil, queue: nil, using: { _ in
-//        overwrite()
-//        })
-//
-//    return true
-//}()
 
 @discardableResult
 func overwrite() -> Bool {
@@ -75,12 +65,6 @@ func overwrite() -> Bool {
     }
     newColorStyle.Button = newButtons
     S = newColorStyle
-//    NotificationCenter.default.post(name: Notification.Name("Update"), object: nil)
-
-//    DispatchQueue.main.asyncAfter(deadline: .now() + 0.1, execute: {
-//        
-//
-//    })
 
     return true
 }
