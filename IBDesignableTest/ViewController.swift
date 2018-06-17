@@ -11,45 +11,21 @@ import MyUIKit
 
 @IBDesignable
 class ViewController: UIViewController {
-//    override func prepareForInterfaceBuilder() {
-//        super.prepareForInterfaceBuilder()
-//        overwrite()
-//        self.view.setNeedsDisplay()
-//        self.view.setNeedsLayout()
-//
-//    }
-//
-//    required init?(coder aDecoder: NSCoder) {
-//        super.init(coder: aDecoder)
-//        overwrite()
-//    }
-//
-//    override func viewDidAppear(_ animated: Bool) {
-//        super.viewDidAppear(animated)
-//        self.view.backgroundColor = UIColor.red
-//        overwrite()
-//        self.view.setNeedsDisplay()
-//        self.view.setNeedsLayout()
-//
-//    }
-//
-//    override func awakeFromNib() {
-//        super.awakeFromNib()
-//        overwrite()
-//        self.view.setNeedsDisplay()
-//        self.view.setNeedsLayout()
-//
-//    }
+    override func prepareForInterfaceBuilder() {
+        overwrite()
+        super.prepareForInterfaceBuilder()
+        view.setNeedsDisplay()
+        view.setNeedsLayout()
+
+    }
 
 }
 
 @IBDesignable
-class NextView: IBDesignableView {
+class FrameworkIntegrationView: IBDesignableView {
     override func prepareForInterfaceBuilder() {
-        super.prepareForInterfaceBuilder()
         overwrite()
-//        NotificationCenter.default.post(name: Notification.Name("Update"), object: nil)
-
+        super.prepareForInterfaceBuilder()
     }
 }
 
@@ -61,7 +37,10 @@ func overwrite() -> Bool {
     newButtons.blueStyle = { view in
         view.layer.borderColor = UIColor.green.cgColor
         view.layer.borderWidth = 10
-        
+        view.setNeedsDisplay()
+        view.setNeedsLayout()
+        view.superview?.setNeedsDisplay()
+        view.superview?.setNeedsLayout()
     }
     newColorStyle.Button = newButtons
     S = newColorStyle

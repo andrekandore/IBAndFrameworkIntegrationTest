@@ -48,7 +48,8 @@ public struct Styles {
     
     public struct Button {
         public var blueStyle: (UIView) -> Void = { view in
-            //            view.backgroundColor = UIColor.orange
+                        view.backgroundColor = UIColor.orange
+            view.setNeedsDisplay()
         }
         
         public init() {}
